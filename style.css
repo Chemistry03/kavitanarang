@@ -23,5 +23,114 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  margin-bot
+  margin-bottom: 0.5rem;
+}
 
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+  background: #1b3b4d;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #f0f0f0;
+  margin: 0 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #f0f0f0;
+  color: #1b3b4d;
+}
+
+/* Main Section */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+main section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #0f3d57;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+/* List Styles */
+ul, ol {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+/* Links */
+a {
+  color: #1b607e;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0d3b56;
+}
+
+/* Footer */
+footer {
+  background: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 3rem;
+  border-top: 1px solid #ccc;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.4rem 0;
+  }
+}
